@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Drawing</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/auto-complete.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Drawing.</h1>
+    <div class="col col9">
+      <canvas id ="drawing">You need to upgrade your browser in order to use Drawing</canvas>
+
+      <div class="input">
+        <input type='text' class="input__text" id="input__text" placeholder="enter a command"/>
+        <div class="input__submit" id="enter">
+          Enter.
+        </div>
+        <p id="errors" class="input__errors"></p>
+      </div>
+    </div>
+
+    <div class="col col3">
+      <div class="instructions">
+        <h2>Valid Commands</h2>
+        <p class="smaller">Enter the commands below and hit the enter key or press the enter button. Don't type the speech marks!</p>
+        <p><b>clear 'colour': </b>Set the whole canvas to the given colour</p>
+        <p><b>circle 'x' 'y' 'radius' 'colour': </b>Draw an unfilled circle with a border of the given colour</p>
+        <p><b>rectangle 'x' 'y' 'w' 'h' 'colour': </b>Draw an unfilled rectangle with a border of the given colour</p>
+        <p><b>line 'x1' 'y1' 'x2' 'y2' 'colour': </b>Draw a line with the given colour</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auto-complete.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

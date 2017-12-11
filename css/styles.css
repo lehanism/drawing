@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #000111;
+  font-family: 'Inconsolata', monospace;
+  color: #fff;
+}
+
+/*type*/
+h1 {
+  color: #33f21a;
+}
+
+.smaller {
+  font-size: 14px;
+}
+
+/*----*/
+
+/*beginnings of a layout framework*/
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    width: 85%;
+  }
+
+  .col {
+    float: left;
+    padding-right: 2%;
+  }
+
+  .col:last-of-type {
+    padding-right: 0;
+  }
+
+  .col3 {
+    width: 25%;
+  }
+
+  .col9 {
+    width: 75%;
+  }
+}
+/*--------------------------------*/
+
+/*canvas setup*/
+#drawing {
+  width: 100%;
+  height: 400px;
+  background-color: #00000a;
+}
+/*-------------*/
+
+/*input section*/
+.input {
+  margin-top: 10px;
+}
+
+.input__text {
+  color: #33f21a;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #00000a;
+  border: none;
+}
+
+.input__text:focus {
+  outline-color: #33f21a;
+}
+
+.input__submit {
+  color: #33f21a;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #00000a;
+  padding: 20px;
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+}
+
+.input__submit:hover, .input__submit.hover {
+  color: #00000a;
+  background-color: #33f21a;
+}
+
+.input__errors {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f22626;
+}
+
+@media (min-width: 500px) {
+
+  .input__text {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .input__submit {
+    width: 18.5%;
+    float: right;
+  }
+
+}
+/*------------------------*/
+
+/*instructions section*/
+.instructions {
+  background-color: #00000a;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+@media (min-width: 992px) {
+
+  .instructions {
+    margin-top: 0;
+  }
+
+}
+/*-------------------------*/
